@@ -3,7 +3,7 @@
 
 ## This function defines 4 functions that set and return the values of a matrix
 ## and its inverse.  It also creates a list of these functions.  
-## V3 - need to do some debugging. 
+## V4 - debugging complete - TODO: test with larger matrices. 
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
@@ -35,6 +35,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
         ## Check the value of the stored inverse and return it if not NULL
+        ## message("right here")
+        ## print(class(x))
         i <- x$getinverse()
         if (!is.null(i)) {
                 message("Getting cached inverse...")
