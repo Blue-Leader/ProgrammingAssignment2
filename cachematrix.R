@@ -49,7 +49,7 @@ cacheSolve <- function(x, ...) {
         matinverse <- solve(data, ...)
         
         ## cache and return the result
-        x$setmean(matinverse)
+        x$setinverse(matinverse)
         matinverse
         
 }
