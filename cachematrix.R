@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This R file contains functions that will cache an inverse matrix, and solve
+## the inverse of the matrix if it is not already cached.
 
-## Write a short comment describing this function
+## This function - does something cool here. V1 - setting up the sync file.
 
 makeCacheMatrix <- function(x = matrix()) {
 
